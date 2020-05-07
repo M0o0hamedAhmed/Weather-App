@@ -1,0 +1,37 @@
+<div class="parent">
+    <div class=" container">
+        <div class="center">
+            <h1>Just type the city name</h1>
+            <p>you must spelling correctly</p>
+            <div class="find">
+                <input [(ngModel)]='city' type="text" placeholder="City">
+
+                <button (click)='search()'>Find</button>
+            </div>
+            <div class="city-name">
+                <span class="capital">{{weatherAll?.name}}</span>
+                <span class="country">,{{weatherAll?.sys.country}}</span>
+            </div>
+            <div class="sun"></div>
+            <span class="weather-condition">{{weatherAll?.weather[0].main}}</span>
+            <span class="temperature">{{weatherAll?.main.temp_min|kToC:273}} <sup>o</sup></span>
+            <div class="temperature-min-max">
+                <span class="max">{{weatherAll?.main.temp_max|kToC:273}} <sup>o</sup></span>
+                <span class="min">{{weatherAll?.main?.temp_min|kToC:273}} <sup>o</sup></span>
+            </div>
+            <span class="sky">{{weatherAll?.weather[0].description}}</span>
+
+
+
+        </div>
+
+
+    </div>
+    <!-- <div class="right">
+        <ul>
+            <li>Home</li>
+            <li>Weather</li>
+        </ul>
+        <span></span>
+    </div> -->
+</div>

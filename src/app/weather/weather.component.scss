@@ -1,0 +1,141 @@
+@mixin border($first, $d) {
+    border-radius: ($first, $d);
+    -webkit-border-radius: ($first, $d);
+    -moz-border-radius: ($first, $d);
+    -ms-border-radius: ($first, $d);
+    -o-border-radius: ($first, $d);
+    -webkit-border-radius: ($first);
+}
+
+.span {
+    align-self: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.parent {
+    background-color: #020312;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    .container {
+        margin: 0;
+        width: 80%;
+        display: inline-block;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        .center {
+            margin: 0;
+            padding: 0;
+            width: 80%;
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: column;
+            h1 {
+                margin: 0;
+                padding: 0;
+                align-self: center;
+                display: inline;
+            }
+            p {
+                align-self: center;
+                margin: 0;
+                padding: 0;
+                color: #41414B;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .find {
+                display: flex;
+                align-self: center;
+                width: 100%;
+                input {
+                    padding: 10px;
+                    width: 70%;
+                    border: 2px solid #000;
+                    outline: none;
+                    box-shadow: 0 0 2pt 2pt #fff;
+                    @include border(2%, 22%);
+                }
+                button {
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: 500;
+                    width: 30%;
+                    outline: none;
+                    background-color: #1A91FF;
+                    border: none;
+                }
+            }
+            .city-name {
+                @extend .span;
+                .capital {}
+                .country {
+                    text-transform: uppercase;
+                }
+            }
+            .sun {
+                align-self: center;
+                width: 100px;
+                height: 100px;
+                background-color: #F16E3F;
+                @include border(50%, 50%);
+            }
+            .weather-condition {
+                @extend .span;
+            }
+            .temperature {
+                @extend .span;
+            }
+            .temperature-min-max {
+                align-self: center;
+                @extend .span;
+                font-size: 25px;
+                width: 25%;
+                display: flex;
+                justify-content: space-between;
+                span {
+                    sup {
+                        vertical-align: super;
+                        font-size: smaller;
+                    }
+                }
+                .min {}
+            }
+            .sky {
+                @extend .span;
+                font-size: 18px;
+            }
+        }
+    }
+    // .right {
+    //     width: 20%;
+    //     display: flex;
+    //     justify-content: start;
+    //     margin: 20px 0;
+    //     padding: 0;
+    //     align-self: flex-start;
+    //     ul {
+    //         width: 50%;
+    //         align-self: flex-start;
+    //         font-size: 24px;
+    //         margin: 0;
+    //         padding: 0;
+    //         list-style-type: none;
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: flex-start;
+    //         li {
+    //             margin: 0;
+    //             padding: 0;
+    //             -webkit-transform: rotate(90deg);
+    //             -moz-transform: rotate(45deg);
+    //             -ms-transform: rotate(45deg);
+    //             -o-transform: rotate(45deg);
+    //         }
+    //     }
+    //     span {}
+    // }
+}

@@ -1,0 +1,144 @@
+.span, .parent .container .center .city-name, .parent .container .center .weather-condition, .parent .container .center .temperature, .parent .container .center .temperature-min-max, .parent .container .center .sky {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.parent {
+  background-color: #020312;
+  height: 100vh;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.parent .container {
+  margin: 0;
+  width: 80%;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.parent .container .center {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.parent .container .center h1 {
+  margin: 0;
+  padding: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  display: inline;
+}
+
+.parent .container .center p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0;
+  padding: 0;
+  color: #41414B;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.parent .container .center .find {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+}
+
+.parent .container .center .find input {
+  padding: 10px;
+  width: 70%;
+  border: 2px solid #000;
+  outline: none;
+  -webkit-box-shadow: 0 0 2pt 2pt #fff;
+          box-shadow: 0 0 2pt 2pt #fff;
+  border-radius: 2%, 22%;
+  -webkit-border-radius: 2%, 22%;
+  -moz-border-radius: 2%, 22%;
+  -ms-border-radius: 2%, 22%;
+  -o-border-radius: 2%, 22%;
+  -webkit-border-radius: 2%;
+}
+
+.parent .container .center .find button {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  width: 30%;
+  outline: none;
+  background-color: #1A91FF;
+  border: none;
+}
+
+.parent .container .center .city-name .country {
+  text-transform: uppercase;
+}
+
+.parent .container .center .sun {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100px;
+  height: 100px;
+  background-color: #F16E3F;
+  border-radius: 50%, 50%;
+  -webkit-border-radius: 50%, 50%;
+  -moz-border-radius: 50%, 50%;
+  -ms-border-radius: 50%, 50%;
+  -o-border-radius: 50%, 50%;
+  -webkit-border-radius: 50%;
+}
+
+.parent .container .center .temperature-min-max {
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 25px;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.parent .container .center .temperature-min-max span sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.parent .container .center .sky {
+  font-size: 18px;
+}
+/*# sourceMappingURL=weather.component.css.map */
